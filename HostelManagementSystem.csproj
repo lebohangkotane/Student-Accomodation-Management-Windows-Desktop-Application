@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F96CBD8-7B32-4773-9B14-09F4A2B3CA3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HostelManagementSystem</RootNamespace>
+    <AssemblyName>HostelManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\DLL Files Guna(ToolBox)\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllActiveEmployeesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllActiveEmployeesfrm.Designer.cs">
+      <DependentUpon>AllActiveEmployeesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllStudentsLiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStudentsLiving.Designer.cs">
+      <DependentUpon>AllStudentsLiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboardfrm.Designer.cs">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmplSalariesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmplSalariesfrm.Designer.cs">
+      <DependentUpon>EmplSalariesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordfrm.Designer.cs">
+      <DependentUpon>ForgotPasswordfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginfrm.Designer.cs">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormerEmployeesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormerEmployeesfrm.Designer.cs">
+      <DependentUpon>FormerEmployeesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formerStudentfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formerStudentfrm.Designer.cs">
+      <DependentUpon>formerStudentfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewRoomfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewRoomfrm.Designer.cs">
+      <DependentUpon>AddNewRoomfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="NewEmployeefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmployeefrm.Designer.cs">
+      <DependentUpon>NewEmployeefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStudentFrm.Designer.cs">
+      <DependentUpon>NewStudentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpfrm.Designer.cs">
+      <DependentUpon>SignUpfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenFrm.Designer.cs">
+      <DependentUpon>SplashScreenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFeesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFeesfrm.Designer.cs">
+      <DependentUpon>StudentFeesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpDelEmplfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpDelEmplfrm.Designer.cs">
+      <DependentUpon>UpDelEmplfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpDelStudentfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpDelStudentfrm.Designer.cs">
+      <DependentUpon>UpDelStudentfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllActiveEmployeesfrm.resx">
+      <DependentUpon>AllActiveEmployeesfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStudentsLiving.resx">
+      <DependentUpon>AllStudentsLiving.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboardfrm.resx">
+      <DependentUpon>Dashboardfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplSalariesfrm.resx">
+      <DependentUpon>EmplSalariesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordfrm.resx">
+      <DependentUpon>ForgotPasswordfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginfrm.resx">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormerEmployeesfrm.resx">
+      <DependentUpon>FormerEmployeesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formerStudentfrm.resx">
+      <DependentUpon>formerStudentfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewRoomfrm.resx">
+      <DependentUpon>AddNewRoomfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployeefrm.resx">
+      <DependentUpon>NewEmployeefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStudentFrm.resx">
+      <DependentUpon>NewStudentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SignUpfrm.resx">
+      <DependentUpon>SignUpfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenFrm.resx">
+      <DependentUpon>SplashScreenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFeesfrm.resx">
+      <DependentUpon>StudentFeesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpDelEmplfrm.resx">
+      <DependentUpon>UpDelEmplfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpDelStudentfrm.resx">
+      <DependentUpon>UpDelStudentfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
